@@ -17,6 +17,8 @@ header {
 
 	}
 
+
+
 	.nav-icon {
 	
 
@@ -75,12 +77,25 @@ header {
 	.dropdown-menu {
 		background-color: $gray-900;
 	}
+
+	.navbar {
+
+		@media (min-width: 992px){
+			padding-top: 30px;
+			padding-bottom: 28px;
+		}
+	}
 	
 	.item-abs {
-		//position: absolute;
-		//top: -1%;
-		//right: 0;
+		
 		background-color: $gray-900;
+		
+		@media (min-width: 992px){
+			position: absolute;
+			top: 0%;
+			right: 0;
+			min-width: 320px;
+		}
 	}
 
 	
