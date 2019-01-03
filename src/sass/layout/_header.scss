@@ -47,15 +47,23 @@ header {
 				left: -22%;
 				top: 25%;
 				
+				@media (min-width: 992px){
+					left: -10%;
+				}
+				
 			}
 
 			&:after {
 				content:"";
 				position: absolute;
 				height: 20px;
-				right: 10px;
-				top: 25%;
+				right: -7%;
+				top: 22%;
 				border-right: 2px solid $border-color-navbar;
+				
+				@media (min-width: 992px){
+					left: -4%;
+				}
 			}
 		}
 
@@ -67,8 +75,12 @@ header {
 				font-family: 'icomoon';
 				color: $white;
 				position: absolute;
-				left: 10px;
+				left: -61%;
 				top: 25%;
+				
+				@media (min-width: 992px){
+					left: -29%;
+				}
 
 			}
 
@@ -76,9 +88,13 @@ header {
 				content:"";
 				position: absolute;
 				height: 20px;
-				right: 10px;
-				top: 25%;
+				right: -36%;
+    			top: 22%;
 				border-right: 2px solid $border-color-navbar;
+				
+				@media (min-width: 992px){
+					right: -30%;
+				}
 				}
 			}
 		}
@@ -142,5 +158,10 @@ header {
     	color: $orange;
     	font-size: 9px;
 	}
+}
+
+.navbar-collapse.collapse {
+
+	justify-content: end;
 }
 
