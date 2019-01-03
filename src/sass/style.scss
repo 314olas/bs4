@@ -4,23 +4,45 @@
 @import "./layout/main";
 @import "./layout/footer";
 @import "./common/variables";
+//@import "./common/custom-variables";
 
 
 header {
 	border-top: 6px solid $black;
 	
 
-	.navbar-light.navbar-toggler:focus{
+	.navbar-toggler:focus{
 		outline: none;
 		border-width: 2px;
 		border-color: $orange;
 
 	}
 
+	.navbar-brand {
+		
 
+		@media (max-width: 355px){
+				max-width: 70%;
+			}
+
+		
+		img {
+			
+			@media (max-width: 355px){
+				max-width: 100%;
+			}
+		}
+	}
 
 	.nav-icon {
-	
+		flex-direction: row;
+		
+		a {
+			
+			&:hover {
+				background: darken($gray-900, 3%);
+			}
+		}
 
 		li:nth-child(1) {
 			position: relative;
@@ -28,7 +50,7 @@ header {
 			&:before {
 				content:"\e909";
 				display: block;
-				font-family: 'Roboto';
+				font-family: 'icomoon';
 				color: $white;
 				position: absolute;
 				left: 10px;
@@ -51,7 +73,7 @@ header {
 			
 			&:before {
 				content:"\e90a";
-				font-family: 'Roboto';
+				font-family: 'icomoon';
 				color: $white;
 				position: absolute;
 				left: 10px;
@@ -78,7 +100,7 @@ header {
 		background-color: $gray-900;
 	}
 
-	.navbar {
+	.nav {
 
 		@media (min-width: 992px){
 			padding-top: 30px;
@@ -86,7 +108,7 @@ header {
 		}
 	}
 	
-	.item-abs {
+	.item-absolute {
 		
 		background-color: $gray-900;
 		
@@ -105,12 +127,14 @@ header {
 	position: relative;
 
 	&:before {
-		font-family: 'Roboto';
+		font-family: 'icomoon';
 		display: block;
 		content: "\e90b";
 		position: absolute;
-		top: 25%;
-		
+		top: 5%;
+    	color: $green;
+    	font-size: 25px;
+    	left: -14px;	
 	}
 }
 
@@ -118,11 +142,13 @@ header {
 	position: relative;
 	
 	&:after {
-		font-family: 'Roboto';
+		font-family: 'icomoon';
 		display: block;
-		content: "\e903";
+		content: "\e906";
 		position: absolute;
-		top: 12%;
-    	right: 3px;
+		top: 21%;
+    	right: 5px;
+    	color: $orange;
+    	font-size: 9px;
 	}
 }
