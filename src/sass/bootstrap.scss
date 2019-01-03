@@ -1,7 +1,40 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
-@import "common/custom-variables";
+@import "./common/custom-variables";
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$white: #fff;
+$black: #2e2f35;    //heder nav color
+$green: #79c55f;;   //success color
+$orange: #f19e46;   //primary color
+$light: #a5a5a5; //placeholder
+$dark: #58585a; //text and other
+$gray-900: #2a2b31; //navbar bg color
+
+$success: $green;
+$primary:  #f19e46;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $dark;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                $dark;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     none;
+
+$navbar-brand-padding-y: 0;
+
+
+// Dropdown menu container and contents.
+
+$dropdown-min-width: 8rem;
+
 
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";

@@ -1,15 +1,113 @@
 
-@import "common/fonts";
-@import "layout/header";
-@import "layout/main";
-@import "layout/footer";
+@import "./common/fonts";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./common/variables";
+
+
+header {
+	border-top: 6px solid $black;
+	
+
+	.navbar-light.navbar-toggler:focus{
+		outline: none;
+		border-width: 2px;
+		border-color: $orange;
+
+	}
+
+	.nav-icon {
+	
+
+		li:nth-child(1) {
+			position: relative;
+			
+			&:before {
+				content:"\e909";
+				display: block;
+				font-family: 'Roboto';
+				color: $white;
+				position: absolute;
+				left: 10px;
+				top: 25%;
+				
+			}
+
+			&:after {
+				content:"";
+				position: absolute;
+				height: 20px;
+				right: 10px;
+				top: 25%;
+				border-right: 2px solid $border-color-navbar;
+			}
+		}
+
+		li:nth-child(2) {
+			position: relative;
+			
+			&:before {
+				content:"\e90a";
+				font-family: 'Roboto';
+				color: $white;
+				position: absolute;
+				left: 10px;
+				top: 25%;
+
+			}
+
+			&:after {
+				content:"";
+				position: absolute;
+				height: 20px;
+				right: 10px;
+				top: 25%;
+				border-right: 2px solid $border-color-navbar;
+				}
+			}
+		}
+
+	.telephone-number {
+		font-size: 22px;
+	}
+
+	.dropdown-menu {
+		background-color: $gray-900;
+	}
+	
+	.item-abs {
+		//position: absolute;
+		//top: -1%;
+		//right: 0;
+		background-color: $gray-900;
+	}
+
+	
+}
 
 
 
+.custom-checkmark {
+	position: relative;
 
+	&:before {
+		font-family: 'Roboto';
+		display: block;
+		content: "\e90b";
+		position: absolute;
+		
+	}
+}
 
-
-
-
-
+.custom-decor-star {
+	position: relative;
+	
+	&:after {
+		font-family: 'Roboto';
+		display: block;
+		content: "\e903";
+		position: absolute;
+	}
+}
 

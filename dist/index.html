@@ -6,56 +6,104 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
     <script src="js/index.js"></script>
 </head>
 <body>
     <div id="wrapper">
-      <div class="container">
-        <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="#">
-              <img src="images/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <header>
+        <div class="container">
+          <div class="row position-relative">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white w-100"  role="navigation">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo">
+              </a>
+              <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto flex-column">
+                  <li class="nav-item rounded-bottom  item-abs">
+                    <ul class="nav nav-icon justify-content-around">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          My Account
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item  text-white" href="#">Log out</a>
+                          <a class="dropdown-item  text-white" href="#">Settings</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          EN
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item  text-white" href="#">RUS</a>
+                          <a class="dropdown-item  text-white" href="#">UK</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          NZD ( &#36;)
+                        </a>
+                        <div class="dropdown-menu dropleft" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item  text-white" href="#"> (&euro;)</a>
+                          <a class="dropdown-item text-white" href="#">UK ( &#8372;)</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ">
+                    <div class="d-flex 
+                    justify-content-center telephone-number">
+                      <a href="tel:31205313300" class="text-dark">+31-20-5313300 </a>
+                      <span class="text-uppercase text-primary ml-4">free call</span>
+                      </div>          
+                    </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      <div class="header-search-form" style='background: url("images/form-map.png") no-repeat, url("images/for-multipli-bg.jpg") repeat;'>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav justify-content-center pt-4 pb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">No booking fees</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">No cancelation fees</a>
                 </li>
-              </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Secure online booking </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1">Instant email confirmation</a>
+                </li>
+            </ul>
             </div>
-          </nav>
+          </div>
+          <div class="row">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" id="location" aria-describedby="location" placeholder="Auckland, New Zealand">
+                <input type="text" class="form-control" id="date" aria-describedby="date" placeholder="Jan 27-29 Jan ">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-
-      
-
-
+      </header>
+    </div>
 </body>
 </html>

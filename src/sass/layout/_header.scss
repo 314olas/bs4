@@ -1,0 +1,11 @@
+.nav-icon {
+
+	li:nth-child(1) {
+
+		&:before {
+			content:"\e909";
+			font-family: 'Roboto';
+		}
+	}
+}
+
