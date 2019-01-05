@@ -2,3 +2,59 @@
 	min-width: 320px;
 	overflow: hidden;
 }
+
+.btn {
+	color: $white;
+	
+	&:hover {
+		color: lighten($gray, 35%);
+	}
+}
+
+main {
+	padding-top: 40px;
+}
+
+.settings-dropdown {
+
+	&>.btn-group {
+		flex-basis: 350px;
+	}
+
+	.settings-btn{
+		flex-grow: 1;
+	}
+	
+	button {
+		padding-right: 60px;
+		
+		&:after {
+			display: none;
+		}
+		
+
+		&:before {
+			content:"";
+			display: block;
+			width: 12px;
+			height: 11px;
+			border-left: 3px solid ;
+			border-bottom: 3px solid;
+			border-color: $white;
+			background-color: transparent;
+			position: absolute;
+			right: 20px;
+			top: 9px;
+			transform: rotate(-45deg);
+			
+		}
+	}
+	
+
+	.dropdown-menu{
+		
+		a:hover{
+			background-color: darken($gray, 7%);
+		}
+	}
+}

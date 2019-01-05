@@ -9,6 +9,11 @@ header {
 
 	}
 
+	.navbar {
+		padding-top: 20px;
+		padding-bottom: 35px;
+	}
+
 	.navbar-brand {
 		
 
@@ -25,6 +30,12 @@ header {
 		}
 	}
 
+
+	.collapse.navbar-collapse {
+		justify-content: flex-end;
+	}
+
+
 	.nav-icon {
 		flex-direction: row;
 		
@@ -36,68 +47,43 @@ header {
 		}
 
 		li:nth-child(1) {
-			position: relative;
 			
-			&:before {
-				content:"\e909";
-				display: block;
-				font-family: 'icomoon';
-				color: $white;
-				position: absolute;
-				left: -22%;
-				top: 25%;
-				
-				@media (min-width: 992px){
-					left: -10%;
-				}
-				
-			}
-
-			&:after {
-				content:"";
-				position: absolute;
-				height: 20px;
-				right: -7%;
-				top: 22%;
+			
+			.nav-link {
+				position: relative;
 				border-right: 2px solid $border-color-navbar;
 				
-				@media (min-width: 992px){
-					left: -4%;
+				&:before {
+					content:"\e909";
+					display: inline-block;
+					font-family: 'icomoon';
+					color: $white;
+					margin-right: 5px;
+					
 				}
 			}
+
 		}
 
 		li:nth-child(2) {
-			position: relative;
-			
-			&:before {
-				content:"\e90a";
-				font-family: 'icomoon';
-				color: $white;
-				position: absolute;
-				left: -61%;
-				top: 25%;
-				
-				@media (min-width: 992px){
-					left: -29%;
-				}
 
-			}
-
-			&:after {
-				content:"";
-				position: absolute;
-				height: 20px;
-				right: -36%;
-    			top: 22%;
+			.nav-link{
+				position: relative;
 				border-right: 2px solid $border-color-navbar;
 				
-				@media (min-width: 992px){
-					right: -30%;
-				}
+				&:before {
+					content:"\e90a";
+					display: inline-block;
+					font-family: 'icomoon';
+					color: $white;
+					margin-right: 5px;
+					
+
 				}
 			}
 		}
+	}
+
 
 	.telephone-number {
 		font-size: 22px;
@@ -161,7 +147,46 @@ header {
 }
 
 .navbar-collapse.collapse {
-
 	justify-content: end;
 }
 
+.header-search-form {
+	padding-top: 20px;
+	
+	hr {
+		color: lighten(rgba($gray, .4),35%);
+		border-top: none;
+		border-bottom: 10px solid;
+		margin: 20px 0 0;
+	}
+	
+	.kids {
+		position: relative;
+		
+		
+	}
+
+	.date {
+		
+	}
+	
+	.btn-search {
+		position: relative;
+		
+		&:before {
+			position: absolute;
+			content: "\e90c";
+			font-family: "icomoon";
+			top: 16%;
+		    left: 8%;
+		    font-size: 16px;
+					
+		}
+	}
+}
+
+
+.input-search {
+	padding: 14px 28px;
+	background-color: $gray;
+}

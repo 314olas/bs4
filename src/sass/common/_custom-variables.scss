@@ -31,6 +31,8 @@ $body-color: $secondary;
 
 $font-size-base: 0.82rem;
 
+//$border-radius: .15rem;
+
 
 // Links
 //
@@ -50,6 +52,16 @@ $navbar-brand-padding-y: 0;
 // Dropdown menu container and contents.
 
 $dropdown-min-width: 8rem;
+
+$btn-border-radius: .1rem;
+$btn-focus-width: none;
+$btn-focus-box-shadow: none;
+
+
+$input-focus-border-color: darken($secondary, 25%);
+$input-focus-box-shadow: darken($secondary, 25%);
+$input-placeholder-color: $secondary;
+$input-border-radius: .1rem;
 
 
 
