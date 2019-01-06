@@ -3,11 +3,15 @@
 	overflow: hidden;
 }
 
+h1,h2 {
+		margin-bottom: 0;
+	}
+
 .btn {
 	color: $white;
 	
 	&:hover {
-		color: lighten($gray, 35%);
+		color: darken($white, 20%);
 	}
 }
 
@@ -57,4 +61,152 @@ main {
 			background-color: darken($gray, 7%);
 		}
 	}
+}
+
+.current-header{
+	flex-wrap: wrap;
+	border: 1px solid #ccc;
+	padding: 15px 20px;
+	border-radius: 8px;
+}
+
+.number{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.hotel-available {
+	
+	p{
+		margin: 0;
+		font-weight: bold;
+	}
+}
+
+.card {
+	position: relative;
+	box-shadow: 0px 1px 2px .5px rgba($gray, 0.75);
+	transition: .4s box-shadow;
+	transition: .4s border;
+
+	&:hover {
+		border: 1px solid $orange;
+		box-shadow: 0px 1px 9px 1px rgba($orange, 0.75);
+	}
+
+	.btn {
+		min-width: 155px;
+		font-size: 17px;
+	}
+}
+
+.card-border{
+
+}
+
+.card-header {
+	background-color: $card-header-bg-color;
+	border-bottom: 3px solid;
+	border-color: $gray;
+}
+
+.price {
+	font-size: 15px;
+	background-color: #e1e1e1;
+	padding: 7px 40px;
+	border-radius: 9px;
+	font-weight: bold;
+}
+
+
+
+.img-holder {
+	position: relative;
+	
+	img{
+		
+		padding: 4px;
+		width: 100%;
+	}
+
+	.rating {
+		background-color: rgba(0,0,0, .4);
+		position: absolute;
+		bottom: 4px;
+		left: 4px;
+		right: 4px;
+		height: 28px;	
+	}
+
+	
+
+	.like {
+		position: absolute;
+		right: 15px;
+		bottom: 40px;
+	}
+
+	p{
+		margin: 0;
+	}
+
+}
+
+.apartment-description {
+	width: 90px;
+	
+	p{
+		margin: 0;
+		
+	}
+}
+
+.special-offer {
+	
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: top;
+		background: url("../images/special-offer.png") no-repeat;
+		position: absolute;
+		top: -18px;
+		right: -2px;
+		width: 52px;
+		height: 94px;
+	}
+}
+
+.empty {
+		color: lighten($orange, 30%);
+	}
+
+.recomended {
+
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: top;
+		background: url("../images/recomended.png") no-repeat;
+		position: absolute;
+		left: 1px;
+		top: 54px;
+		width: 131px;
+		height: 78px;
+		z-index: 55;
+	}
+}
+
+////////////////////////////////////////////////////////////////////
+.sidebar {
+	
+	p{
+			margin: 0;
+		}
+	
+	
+	.title-holder {
+		font-size: 15px;
+		font-weight: bold;
+	}
+
 }

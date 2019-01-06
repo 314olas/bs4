@@ -2,7 +2,7 @@
 
 $font-family-sans-serif: 'Roboto', sans-serif;
 
-
+$card-header-bb-color: #f9f9f9;
 $white: #fff;
 $black: #2e2f35;    //heder nav color
 $green: #79c55f;;   //success color
@@ -19,6 +19,7 @@ $theme-colors: map-merge(
   $theme-colors,
   (
     "primary": $primary,
+    "success":    $success,
     "secondary":  $secondary   
   )
 );
@@ -63,6 +64,11 @@ $input-focus-box-shadow: darken($secondary, 25%);
 $input-placeholder-color: $secondary;
 $input-border-radius: .1rem;
 
+$headings-font-weight:700;
+
+$h2-font-size: 23px;
+$h3-font-size: 16px;
 
 
+$enable-shadows: true;
 
