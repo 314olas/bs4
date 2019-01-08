@@ -18,14 +18,14 @@ header {
 	.navbar-brand {
 		
 
-		@media (max-width: 355px){
+		@media (max-width: 370px){
 				max-width: 70%;
 			}
 
 		
 		img {
 			
-			@media (max-width: 355px){
+			@media (max-width: 370px){
 				max-width: 100%;
 			}
 		}
@@ -103,7 +103,8 @@ header {
 	}
 	
 	.item-absolute {
-		
+		border-bottom-right-radius: 6px;
+    	border-bottom-left-radius: 6px;
 		background-color: $gray-900;
 		
 		@media (min-width: 992px){
@@ -111,6 +112,21 @@ header {
 			top: 0%;
 			right: 0;
 			min-width: 320px;
+		}
+		
+		
+
+		a.nav-link.dropdown-toggle,
+		a.dropdown-item {
+			color: $white;
+			
+			&:hover {
+				color: $orange;
+			}
+
+			&:focus {
+				color: $orange;
+			}
 		}
 	}
 
@@ -154,6 +170,10 @@ header {
 .header-search-form {
 	padding-top: 20px;
 	
+	.nav-link {
+		font-weight: bold;
+	}
+	
 	hr {
 		color: lighten(rgba($gray, .4),35%);
 		border-top: none;
@@ -163,8 +183,6 @@ header {
 	
 	.kids {
 		position: relative;
-		
-		
 	}
 
 	.date {

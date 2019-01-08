@@ -40,7 +40,7 @@ $font-size-base: 0.82rem;
 // Style anchor elements.
 
 $link-color:                $secondary;
-$link-hover-color:          darken($link-color, 30%);
+$link-hover-color:          darken($link-color, 40%);
 $link-hover-decoration:     none;
 
 
@@ -61,13 +61,15 @@ $btn-focus-box-shadow: none;
 
 $input-focus-border-color: darken($secondary, 25%);
 $input-focus-box-shadow: darken($secondary, 25%);
-$input-placeholder-color: $secondary;
+$input-placeholder-color: $light;
 $input-border-radius: .1rem;
 
 $headings-font-weight:700;
 
 $h2-font-size: 23px;
 $h3-font-size: 16px;
+$h4-font-size: 15px;
+
 
 
 $enable-shadows: true;

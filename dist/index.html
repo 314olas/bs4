@@ -18,7 +18,7 @@
           <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 align-items-md-end"  role="navigation">
               <a class="navbar-brand" href="#">
-                <h1>
+                <h1 role="logo">
                   <img src="images/logo.png" alt="logo">
                 </h1>
               </a>
@@ -28,32 +28,32 @@
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 
-                <ul class="navbar-nav nav-icon justify-content-around item-absolute my-2 my-lg-0">
+                <ul class="navbar-nav nav-icon justify-content-around item-absolute my-2 my-lg-0 ">
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  text-white " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       My Account
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item  text-white" href="#">Log out</a>
-                      <a class="dropdown-item  text-white" href="#">Settings</a>
+                      <a class="dropdown-item " href="#">Log out</a>
+                      <a class="dropdown-item " href="#">Settings</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       EN
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item  text-white" href="#">RUS</a>
-                      <a class="dropdown-item  text-white" href="#">UK</a>
+                      <a class="dropdown-item " href="#">RUS</a>
+                      <a class="dropdown-item " href="#">UK</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       NZD ( &#36;)
                     </a>
                     <div class="dropdown-menu dropleft" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item  text-white" href="#"> (&euro;)</a>
-                      <a class="dropdown-item text-white" href="#">UK ( &#8372;)</a>
+                      <a class="dropdown-item" href="#"> (&euro;)</a>
+                      <a class="dropdown-item" href="#">UK ( &#8372;)</a>
                     </div>
                   </li>
                 </ul>
@@ -70,49 +70,50 @@
           </div>
         </div>
       </header>
-      <section class="header-search-form" style='background: url("images/form-map.png") no-repeat, url("images/for-multipli-bg.jpg") repeat;' role="search-form">
+      <section class="header-search-form" style='background: url("images/form-map.png") no-repeat center center, url("images/for-multipli-bg.jpg") repeat;' role="search-form">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <ul class="nav flex-column flex-sm-row align-items-center justify-content-around pb-3">
-                <li class="nav-item custom-checkmark" data-toggle="tooltip" data-placement="top" title="No booking fees">
-                  <a class="nav-link" href="#">No booking fees</a>
-                </li>
-                <li class="nav-item custom-checkmark custom-decor-star"  data-toggle="tooltip" data-placement="top" title="No cancelation fees">
-                  <a class="nav-link" href="#">No cancelation fees</a>
-                </li>
-                <li class="nav-item custom-checkmark" data-toggle="tooltip" data-placement="top" title="Secure online booking">
-                  <a class="nav-link" href="#"> Secure online booking </a>
-                </li>
-                <li class="nav-item custom-checkmark" data-toggle="tooltip" data-placement="top" title="Instant email confirmation">
-                  <a class="nav-link" href="#">Instant email confirmation</a>
-                </li>
-            </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <form action="#" class="form-inline justify-content-between rounded w-100 input-search" id="input-search">
-              <input type="text" class="form-control mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1" id="location" aria-describedby="location" placeholder="Auckland, New Zealand">
-              <input type="text" class="form-control date mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-md-grow-0 flex-shrink-1" id="date" aria-describedby="date" placeholder="Jan 27-29 Jan ">
-              <input type="text" class="form-control kids mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1" id="kids" aria-describedby="kids" placeholder="2 Adults & Kids">
-              <button class="btn btn-primary btn-search align-self-stretch flex-grow-1 flex-lg-grow-0  flex-shrink-1" type="submit">Search</button>
-            </form>
-            </div>  
-          </div>
+          <ul class="nav flex-column flex-sm-row align-items-center justify-content-around pb-3">
+            <li class="nav-item custom-checkmark" data-toggle="tooltip" data-placement="top" title="No booking fees">
+              <a class="nav-link" href="#">No booking fees</a>
+            </li>
+            <li class="nav-item custom-checkmark custom-decor-star"  data-toggle="tooltip" data-placement="top" title="No cancelation fees">
+              <a class="nav-link" href="#">No cancelation fees</a>
+            </li>
+            <li class="nav-item custom-checkmark" data-toggle="tooltip" data-placement="top" title="Secure online booking">
+              <a class="nav-link" href="#"> Secure online booking </a>
+            </li>
+            <li class="nav-item custom-checkmark" data-toggle="tooltip" data-placement="top" title="Instant email confirmation">
+              <a class="nav-link" href="#">Instant email confirmation</a>
+            </li>
+          </ul>
+          <form action="#" class="form-inline justify-content-between rounded w-100 input-search" id="input-search">
+          <input type="text" class="form-control mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1" id="location" aria-describedby="location" placeholder="Auckland, New Zealand">
+          <input type="text" class="form-control date mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-md-grow-0 flex-shrink-1" id="date" aria-describedby="date" placeholder="Jan 27-29 Jan ">
+          <input type="text" class="form-control kids mb-2 mb-md-0 mr-sm-2 mr-md-0 mr-lg-2 flex-grow-1 flex-shrink-1" id="kids" aria-describedby="kids" placeholder="2 Adults & Kids">
+          <button class="btn btn-primary btn-search align-self-stretch flex-grow-1 flex-lg-grow-0  flex-shrink-1 mt-md-2 mt-lg-0" type="submit">Search</button>
+        </form>
         </div>
         <hr>
       </section>
-      <main role="main">
+      <main role="main" style="background: url('images/main-bg-map.jpg') no-repeat center center;">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-md-9">
               <div class="row">
-                <div class="col-12">
-                  <div class="settings-dropdown d-flex w-100">
+                <div class="col-12 ">
+                  <div class="d-flex justify-content-between align-items-center shadow-sm selected-hotel-header ">
+                    <div class="current-location text-primary">
+                      <h2>Auckland</h2>
+                    </div>
+                    <div class="hotel-available">
+                      <p><span class="number">108</span> hotels available</p>
+                    </div>
+                    <button class="btn btn-success btn-sm" type="button">Compare Shortlist Hotel</button>
+                  </div>
+                  <div class="settings-dropdown d-flex w-75 w-md-100">
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                      <div class="btn-group settings-btn" role="group">
-                        <button id="" type="button" class="btn btn-secondary dropdown-toggle text-left flex-grow-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="btn-group settings-btn round" role="group">
+                        <button id="" type="button" class="btn btn-secondary dropdown-toggle text-left flex-grow-1 custom-dropdown-arrow btn-border-top-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         SORT BY:
                         </button>
                         <div class="dropdown-menu bg-secondary " aria-labelledby="btnGroupDrop1">
@@ -121,7 +122,7 @@
                         </div>
                       </div>
                       <div class="btn-group settings-btn" role="group">
-                        <button id="" type="button" class="btn btn-secondary dropdown-toggle text-left flex-grow-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button id="" type="button" class="btn btn-secondary dropdown-toggle text-left flex-grow-1 custom-dropdown-arrow btn-border-top-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           ROOM TYPE:
                         </button>
                         <div class="dropdown-menu bg-secondary" aria-labelledby="btnGroupDrop1">
@@ -132,391 +133,386 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 ">
-                  <div class="d-flex justify-content-between align-items-center shadow-sm current-header ">
-                    <div class="current-location text-primary">
-                      <h2>Auckland</h2>
-                    </div>
-                    <div class="hotel-available">
-                      <p><span class="number">108</span> hotels available</p>
-                    </div>
-                    <button class="btn btn-success btn-sm" type="button">Compare Shortlist Hotel</button>
-
-                  </div>
-                </div>
-                <div class="col-12 mt-4">
-                  <div class="row">
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card ">
-                        <div class="card-header text-center">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                <div class="col-12">
+                  <section class="hotels-list">
+                    <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
-                        </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card">
-                        <div class="card-header text-center card-border">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
                               </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
                               </div>
                             </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
-                        </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card">
-                        <div class="card-header text-center card-border">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-4">
-                  <div class="row">
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card ">
-                        <div class="card-header text-center">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card ">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card recomended">
-                        <div class="card-header text-center card-border">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card ">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card">
-                        <div class="card-header text-center card-border">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card ">
+                          <div class="card-header  text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-4">
-                  <div class="row">
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card ">
-                        <div class="card-header text-center">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card recomended">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card special-offer">
-                        <div class="card-header text-center card-border">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card ">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland Lorem ipsum.</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0">
-                      <div class="card">
-                        <div class="card-header text-center card-border">
-                          <h3>Scenic Hotel Auckland</h3>
-                        </div>
-                          <div class="img-holder text-primary">
-                            <img src="images/hotel.png" alt="hotel img">
-                            <div class="rating d-flex justify-content-between align-items-center px-2">
-                              <div class="stars ">
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full"></span>
-                                <span class="icon-star-full empty"></span>
-                                <span class="icon-star-full empty"></span>
-                              </div>
-                              <div class="reviews">
-                                <p><span class="reviews-number">650</span> reviews</p>
-                              </div>
-                            </div>
-                            <div class="like text-white">
-                              <span class="icon-like"></span>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card ">
+                          <div class="card-header text-truncate text-center">
+                            <h3>Scenic Hotel Auckland</h3>
                           </div>
-                        <div class="card-body justify-content-center w-100 pb-2 d-flex">
-                          <span class="card-text price text-center">
-                              NZ&#36; <span class="number"> 203</span>
-                          </span>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <div class=" mx-auto pb-2 apartment-description font-weight-bold">
-                          <p class ="text-truncate ">
-                            <i>Lorem ipsum dolor.</i>
-                          </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card special-offer">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
+                          </div>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
                         </div>
-                        <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
-                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card ">
+                          <div class="card-header text-center">
+                            <h3 class="text-truncate">Scenic Hotel Auckland</h3>
+                          </div>
+                            <div class="img-holder text-primary">
+                              <img src="images/hotel.png" alt="hotel img">
+                              <div class="rating d-flex justify-content-between align-items-center px-2">
+                                <div class="stars ">
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full"></span>
+                                  <span class="icon-star-full empty"></span>
+                                  <span class="icon-star-full empty"></span>
+                                </div>
+                                <div class="reviews">
+                                  <p><span class="reviews-number">650</span> reviews</p>
+                                </div>
+                              </div>
+                              <div class="like text-white">
+                                <span class="icon-like"></span>
+                              </div>
+                            </div>
+                          <div class="card-body justify-content-center w-100 pb-2 pt-2 d-flex">
+                            <span class="card-text price text-center">
+                                NZ&#36; <span class="number"> 203</span>
+                            </span>
+                          </div>
+                          <div class=" mx-auto pb-2 apartment-description font-weight-bold">
+                            <p class ="text-truncate ">
+                              <i>Lorem ipsum dolor.</i>
+                            </p>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary text-uppercase mb-3 mx-auto">book it</a>
+                        </div>
                     </div>
                   </div>
+                  </section>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-3">
-              <div class="row">
-                <div class="col-12 sidebar">
-                  <div class="card">
-
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item justify-content-between d-flex align-items-center">
-                        <div class="title-holder">
-                        <p>Star Raiting</p>
-                        </div>
-                        <div class="stars text-primary">
+            <div class="col-12 col-md-3">
+              <section class="sidebar">
+                <div class="card">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item justify-content-between d-flex align-items-center">
+                      
+                      <h4>Star Raiting</h4>
+                      
+                      <div class="stars text-primary">
+                        <span class="icon-star-full"></span>
                           <span class="icon-star-full"></span>
-                            <span class="icon-star-full"></span>
-                            <span class="icon-star-full"></span>
-                            <span class="icon-star-full empty"></span>
-                            <span class="icon-star-full empty"></span>
-                        </div>
-                      </li>
-                      <li class="list-group-item justify-content-between d-flex align-items-center">
-                        <div class="title-holder">
-                        <p>Guwsts raiting</p>
-                        </div>
-                        <div class="stars text-primary">
+                          <span class="icon-star-full"></span>
+                          <span class="icon-star-full empty"></span>
+                          <span class="icon-star-full empty"></span>
+                      </div>
+                    </li>
+                    <li class="list-group-item justify-content-between d-flex align-items-center">
+                      
+                      <h4>Guest raiting</h4>
+                      
+                      <div class="stars text-primary">
+                        <span class="icon-checkbox-checked"></span>
                           <span class="icon-checkbox-checked"></span>
-                            <span class="icon-checkbox-checked"></span>
-                            <span class="icon-checkbox-checked"></span>
-                            <span class="icon-checkbox-checked empty"></span>
-                            <span class="icon-checkbox-checked empty"></span>
+                          <span class="icon-checkbox-checked"></span>
+                          <span class="icon-checkbox-checked empty"></span>
+                          <span class="icon-checkbox-checked empty"></span>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <form>
+                        <div class="form-group">
+                          <label for="formControlRange">
+                            <span class="title-holder">
+                              <h4>
+                                Price Range
+                              </h4>
+                            </span>
+                          </label>
+                          <input type="range" class="form-control-range" id="formControlRange">
                         </div>
-                      </li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                  </div>
+                      </form>
+                    </li>
+                    <li class="list-group-item">
+                      
+                    </li>
+                  </ul>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
