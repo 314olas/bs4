@@ -48,6 +48,16 @@ $link-hover-decoration:     none;
 $navbar-brand-padding-y: 0;
 //$navbar-dark-hover-color: ;
 //$navbar-dark-active-color: ;
+$navbar-light-hover-color: $primary;
+$navbar-light-color: $white;
+$navbar-light-active-color: $primary;
+$navbar-light-toggler-border-color: $secondary;
+
+
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: darken($white, 15%);
+$dropdown-link-hover-bg: none;
+
 
 
 // Dropdown menu container and contents.
@@ -58,17 +68,18 @@ $btn-border-radius: .1rem;
 $btn-focus-width: none;
 $btn-focus-box-shadow: none;
 
-
-$input-focus-border-color: darken($secondary, 25%);
+$input-color: $secondary;
+//$input-focus-border-color: darken($secondary, 25%);
 $input-focus-box-shadow: darken($secondary, 25%);
 $input-placeholder-color: $light;
-$input-border-radius: .1rem;
+$input-border-radius: 0px;
 
 $headings-font-weight:700;
 
 $h2-font-size: 23px;
 $h3-font-size: 16px;
 $h4-font-size: 15px;
+$h5-font-size: 14px;
 
 
 
