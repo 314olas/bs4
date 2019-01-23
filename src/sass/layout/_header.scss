@@ -1,5 +1,5 @@
 header {
-	border-top: 6px solid $gray;
+	border-top: 6px solid $header-top-border;
 	
 	[class^="icon-"] {
 		color: $white;
@@ -144,9 +144,14 @@ header {
 		flex-basis: 200px;		
 	}
 	
-	.btn-search {
+	
+}
+
+.btn-search-holder{
+	flex-basis: 110px;
+	
+	button {
 		position: relative;
-		flex-basis: 110px;
 		
 		&:before {
 			position: absolute;

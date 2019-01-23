@@ -91,11 +91,20 @@
             </li>
           </ul>
           <form action="#" class="form-inline justify-content-between rounded w-100 input-search" id="input-search">
-          <input type="text" class="form-control mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1" id="location" aria-describedby="location" placeholder="Auckland, New Zealand">
-          <input type="text" class="form-control date mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-md-grow-0 flex-shrink-1" id="date" aria-describedby="date" placeholder="Jan 27-29 Jan ">
-          <input type="text" class="form-control kids mb-2 mb-md-0 mr-sm-2 mr-md-0 mr-lg-2 flex-grow-1 flex-shrink-1" id="kids" aria-describedby="kids" placeholder="2 Adults & Kids">
-          <button class="btn btn-primary btn-search align-self-stretch flex-grow-1 flex-lg-grow-0  flex-shrink-1 mt-md-2 mt-lg-0" type="submit">Search</button>
-        </form>
+              <div class="mb-2 mb-md-0 mr-sm-2 flex-grow-1  flex-shrink-1">
+                <input type="text" class="form-control w-100" id="location" aria-describedby="location" placeholder="Auckland, New Zealand">
+              </div>
+              <div class="mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-md-grow-0 flex-shrink-1">
+                <input type="text" class="form-control w-100" id="date" aria-describedby="date" placeholder="Jan 27-29 Jan ">
+              </div>
+              <div class="mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1">
+                <input type="text" class="form-control w-100" id="kids" aria-describedby="kids" placeholder="2 Adults & Kids">
+              </div>
+              <div class="d-flex flex-grow-1 flex-lg-grow-0 flex-shrink-1 mb-2 mb-md-0 mt-md-0 align-self-stretch btn-search-holder">
+                <button class="btn btn-primary align-self-stretch w-100" type="submit">Search</button>
+              </div>
+            </form>
+          </ul>
         </div>
         <hr>
       </section>
@@ -105,14 +114,21 @@
             <div class="col-12 col-md-9">
               <div class="row">
                 <div class="col-12 ">
-                  <div class="d-flex justify-content-between align-items-center shadow-sm selected-hotel-header ">
+                  <div class="d-flex flex-wrap justify-content-around align-items-center shadow-sm selected-hotel-header ">
                     <div class="current-location text-primary">
                       <h2>Auckland</h2>
                     </div>
                     <div class="hotel-available">
                       <p><span class="number">108</span> hotels available</p>
                     </div>
-                    <button class="btn btn-success btn-sm" type="button">Compare Shortlist Hotel</button>
+                    <div class="mt-2 mt-md-0">
+                        <button class="btn btn-success btn-sm " type="button">Compare Shortlist Hotel</button>
+                    </div>
+                    <div class="btn-group mt-2 mt-md-0" role="group">
+                        <button class="btn btn-sm btn-secondary border-0">List</button>
+                        <button class="btn btn-primary btn-sm">List</button>
+                        <button class="btn btn-sm btn-secondary border-0 pb-0 pt-1"><span class="icon-location"></span></button>
+                    </div>
                   </div>
                   <div class="settings-dropdown d-flex w-75 w-md-100">
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
@@ -512,8 +528,262 @@
                       </form>
                     </li>
                     <li class="list-group-item">
-                      
+                      <div id="friendlyAccordion" class="accordion">
+                        <div class="" id="friendly">
+                          <a class="btn btn-link custom-dropdown-arrow pl-0 w-100 text-left" data-toggle="collapse" data-target="#friendlyList" aria-expanded="true" aria-controls="friendlyList">
+                            Friendly!?
+                          </a>
+                        </div>
+
+                        <div id="friendlyList" class="collapse show" aria-labelledby="friendly" data-parent="#friendlyAccordion">
+                          <ul class="list-group ">
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="familyFriendly" type="checkbox" checked>
+                                    Family friendly(96)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="petFriendly" type="checkbox" >
+                                    Pet friendly
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="gayFriendly" type="checkbox" >
+                                    Gay friendly
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="disabledFacility's" type="checkbox" >
+                                    Disabled Facility's
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </li>
+                    <li class="list-group-item">
+                      <div id="amenitiesAccordion" class="accordion">
+                        <div class="" id="amenities">
+                          <a class="btn btn-link custom-dropdown-arrow pl-0 w-100 text-left" data-toggle="collapse" data-target="#amenitieslyList" aria-expanded="true" aria-controls="amenitieslyList">
+                              Amenities
+                          </a>
+                        </div>
+
+                        <div id="amenitieslyList" class="collapse show" aria-labelledby="amenities" data-parent="#amenitiesAccordion">
+                          <ul class="list-group ">
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="24HourRoomService" type="checkbox" checked>
+                                  24 Hour Room Service(108)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="nonSmokingRooms" type="checkbox" >
+                                  Non Smoking Rooms(108)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="smokingRooms" type="checkbox" >
+                                  Smoking Rooms(0)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="airportShuttle" type="checkbox" >
+                                  Airport Shuttle(96)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="concierge" type="checkbox" >
+                                  Concierge(12)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="hotelWifi" type="checkbox" >
+                                  Hotel Wifi(108)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="roomWifi" type="checkbox" >
+                                  Room Wifi(83)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="freeWifi" type="checkbox" >
+                                  Free Wifi(56)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="crecheBabySitting" type="checkbox" >
+                                  Creche/Baby sitting(45)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="lateCheckout" type="checkbox" >
+                                  Late Checkout
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div id="accommodationTypeAccordion" class="accordion">
+                        <div class="" id="accommodationType">
+                          <a class="btn btn-link custom-dropdown-arrow pl-0 w-100 text-left" data-toggle="collapse" data-target="#accommodationTypeList" aria-expanded="true" aria-controls="accommodationTypeList">
+                              Accommodation Type
+                          </a>
+                        </div>
+
+                        <div id="accommodationTypeList" class="collapse show" aria-labelledby="accommodationType" data-parent="#accommodationTypeAccordion">
+                          <ul class="list-group ">
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="beachSeaside" type="checkbox" checked>
+                                  Beach - Seaside(10)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="romanti" type="checkbox" >
+                                  Romantic(23)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="budget" type="checkbox" >
+                                  Budget(66)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="family" type="checkbox" >
+                                  Family(24)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="cityCenter" type="checkbox" >
+                                  City Center(5)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="boutique" type="checkbox" >
+                                  Boutique(2)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="shopping" type="checkbox" >
+                                  Shopping(57)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="golfSports" type="checkbox" >
+                                  Golf Sports(1)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="gourmetRestaurant" type="checkbox" >
+                                  Gourmet Restaurant(58)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="list-group-item pl-0 py-1">
+                              <div class="form-check custom-input-checkbox">
+                                <label class="form-check-label pl-1">
+                                  <input class="form-check-input" id="businessHotel" type="checkbox" >
+                                  Business Hotel(75)
+                                  <span class="toggle-checkbox"></span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+
+                        </div>
                   </ul>
                 </div>
               </section>

@@ -255,5 +255,83 @@ main {
 			margin: 0;
 		}
 
+	.btn.btn-link {
 
+		&:active {
+			box-shadow: none;
+		}
+	}
+
+	.list-group-item {
+		border: none;
+	}
+}
+
+.custom-input-checkbox {
+
+	.form-check-label {
+		position: relative;
+	}	
+
+	input {
+	display: none;
+
+		
+	}
+
+	input:checked + .toggle-checkbox:after {
+		opacity: 1;
+	}
+
+	.toggle-checkbox{
+		position: absolute;
+		top: -2px;
+		left: -19px;
+		transition: .4s;
+
+		&:before {
+			display: block;
+			content: "\e904";
+			font-family: "icomoon";
+			position: absolute;
+			font-size: 17px;
+		}
+
+		&:after {
+			display: block;
+			content: "\e90b";
+			font-family: "icomoon";
+			position: absolute;
+			color: $green;
+			font-size: 21px;
+    	top: -6px;
+			opacity: 0;
+			transition: .4s
+		}
+
+
+
+		
+	}
+
+
+}
+
+.accordion {
+	
+	a {
+		font-weight: bold;
+		font-size: 15px;
+
+	}
+
+	.custom-dropdown-arrow {
+		
+		&:before {
+			right: 20px;
+			top: 22px;
+			border-color: $gray;
+		
+		}
+	}
 }

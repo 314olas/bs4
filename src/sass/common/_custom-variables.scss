@@ -10,10 +10,12 @@ $orange: #f58220;   //primary color
 $light: #a5a5a5; //placeholder
 $gray: #58585a; //text and other
 $gray-900: #2a2b31; //navbar bg color
+$gray-400: #c4c4c4; //card border
 
 $success: $green;
 $primary: $orange;
 $secondary: $gray;
+
 
 $theme-colors: map-merge(
   $theme-colors,
@@ -24,6 +26,7 @@ $theme-colors: map-merge(
   )
 );
 
+
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark: $gray;
 
@@ -31,9 +34,6 @@ $yiq-text-dark: $gray;
 $body-color: $secondary;
 
 $font-size-base: 0.82rem;
-
-//$border-radius: .15rem;
-
 
 // Links
 //
@@ -84,4 +84,7 @@ $h5-font-size: 14px;
 
 
 $enable-shadows: true;
+
+
+$card-border-color: $gray-400;
 
